@@ -1,0 +1,15 @@
+mongodb 安装说明
+
+1.下载地址：
+https://www.mongodb.com/download-center/community
+
+2.下载完成后实用powershell管理员版本运行安装文件
+
+3.安装完成后，在bin目录同级建立data、log两个文件夹，分别在其中建立db文件夹与mongodb.log文件
+
+4.在cmd测试1：mongod --dpath 'db'路径，然后在浏览器打开 http://localhost:27017/
+
+5.开启服务：管理员cmd
+mongod --bind_ip 0.0.0.0 --logpath "D:\MongoDB\log\mongodb.log" --logappend --dbpath "D:\MongoDB\data\db" --port 27017 --serviceName "MongoDB" --serviceDisplayName "MongoDB" --install
+
+6.开启服务后测试2：在cmd输入mongo
