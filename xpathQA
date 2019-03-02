@@ -1,0 +1,5 @@
+Q:对于每次xpath选择多个对象后，无法选择单个对象内其他节点的情况:
+A:更改原xpath语句
+  quote.xpath('/span[@class="text"]/text()')
+  为
+  quote.xpath('./span[@class="text"]/text()')
