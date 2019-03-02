@@ -5,11 +5,13 @@ https://www.mongodb.com/download-center/community
 
 2.下载完成后实用powershell管理员版本运行安装文件
 
-3.安装完成后，在bin目录同级建立data、log两个文件夹，分别在其中建立db文件夹与mongodb.log文件
+3.将mongdb的bin文件目录加入环境变量path
 
-4.在cmd测试1：mongod --dpath 'db'路径，然后在浏览器打开 http://localhost:27017/
+4.安装完成后，在bin目录同级建立data、log两个文件夹，分别在其中建立db文件夹与mongodb.log文件
 
-5.开启服务：管理员cmd
+5.在cmd测试1：mongod --dpath 'db'路径，然后在浏览器打开 http://localhost:27017/，显示It looks like you are trying to access MongoDB over HTTP on the native driver port.
+
+6.开启服务：管理员cmd
 mongod --bind_ip 0.0.0.0 --logpath "D:\MongoDB\log\mongodb.log" --logappend --dbpath "D:\MongoDB\data\db" --port 27017 --serviceName "MongoDB" --serviceDisplayName "MongoDB" --install
 
-6.开启服务后测试2：在cmd输入mongo
+7.开启服务后测试2：在cmd输入mongo
