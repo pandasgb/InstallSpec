@@ -3,3 +3,6 @@ A:更改原xpath语句
   quote.xpath('/span[@class="text"]/text()')
   为
   quote.xpath('./span[@class="text"]/text()')
+
+在Scrapy中提取节点不用extract，提取item要extract
+
