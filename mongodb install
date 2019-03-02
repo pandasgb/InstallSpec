@@ -11,7 +11,7 @@ https://www.mongodb.com/download-center/community
 
 5.在cmd测试1：mongod --dpath 'db'路径，然后在浏览器打开 http://localhost:27017/，显示It looks like you are trying to access MongoDB over HTTP on the native driver port.
 
-6.开启服务：管理员cmd
+6.开启服务 cd到monogodb bin文件夹：管理员cmd
 mongod --bind_ip 0.0.0.0 --logpath "D:\MongoDB\log\mongodb.log" --logappend --dbpath "D:\MongoDB\data\db" --port 27017 --serviceName "MongoDB" --serviceDisplayName "MongoDB" --install
 
 7.开启服务后测试2：在cmd输入mongo
