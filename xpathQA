@@ -12,3 +12,6 @@ extract_first也可以设置默认返回extract_first('default response')
 
 
 //*[starts-with(@id, "postmessage_")]
+.//div[matches(@id,'foo\d+')]
+ends-with
+replace
