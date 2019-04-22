@@ -8,3 +8,7 @@ A:更改原xpath语句
 在Scrapy中提取节点不用extract，提取item要extract
 extract_first是解决列表中只有单个元素的问题，如extract提取出来的是['name = xxx']，则extract_first是'name = xxx'
 extract_first也可以设置默认返回extract_first('default response')
+
+
+
+//*[starts-with(@id, "postmessage_")]
